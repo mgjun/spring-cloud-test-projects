@@ -8,10 +8,16 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/forezp/SpringcloudConfig/
-          searchPaths: respo
-          username:
-          password:
+          uri: https://github.com/mgjun/spring-cloud-config-test.git
+          searchPaths: config
+          username: mgjun
+          password: '{cipher}89aecf4409410f8399f0ca472ae63924e114e1cc5e1312b65978fa232e070f50'
         overrides:
-          foo: bar
+          foo: foo test
       label: master
+security:
+  basic:
+    enabled: true
+  user:
+    name: user
+    password: 123456

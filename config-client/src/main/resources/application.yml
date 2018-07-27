@@ -4,9 +4,10 @@ server:
 spring:
   application:
     name: config-client
-  cloud:
-    config:
-      label: master
-      profile: dev
-      uri: http://localhost:8888/
+
+
+endpoints:
+  refresh:
+    enabled: true
+    sensitive: false
 

@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
-    @Value("${democonfigclient.message}")
-    private String rabbitPort;
+    @Value("${profile}")
+    private String getCurrentProfile;
 
-    @GetMapping("/hello")
+    @GetMapping("/profile")
     public String home() {
-        return rabbitPort;
+        return getCurrentProfile;
     }
 
 

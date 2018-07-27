@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    config:
+      label: master
+      profile: prod
+      uri: http://user:123456@localhost:8888/
